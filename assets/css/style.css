@@ -1,0 +1,32 @@
+.bg {
+    background-image: url(../img/background-login.jpeg);
+}
+
+h1, h2, h3, h4, h5, p, form {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+#login {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    left: 35%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff9900;
+    border-color: #ff9900;
+}   /* Boton principal */
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #E38C00;
+    border-color: #E38C00;
+}   /* cursor sobre boton */
+
+.btn-primary:active {
+    background-color: #BB7700 !important;
+    border-color: #BB7700 !important;
+    outline: none;
+    box-shadow: none !important;
+} /* CLICK Matias Bensan */
