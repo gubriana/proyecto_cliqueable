@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+[7:32, 28/1/2020] Gabriela: <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,60 +21,167 @@
     <!--CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     
-    <nav class="site-header sticky-top py-1">
+    <nav class="site-header sticky-top py-1 bg-black mb-4">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2" href="#"><i class="fas fa-flask"></i></a>
-            <a class="py-2 d-none d-md-inline-block active" href="#"><i class="fas fa-clock"></i> Clock in | Clock out</a>
-            <a class="py-2 d-none d-md-inline-block" href="./points.html"><i class="fas fa-chart-bar"></i> Points</a>
-            <a class="py-2 d-none d-md-inline-block" href="./daily-report.html"><i class="fas fa-list-alt"></i> Daily report</a>
-            <a class="py-2 d-none d-md-inline-block" href="./settings.html"><i class="fas fa-sliders-h"></i> Settings</a>
-            <a class="py-2 d-none d-md-inline-block" href="./login.html"><i class="fas fa-sign-out-alt    "></i>Log out</a>
+            <a class="py-2 d-none d-md-inline-block text-center text-light active" href="#"><i class="fas fa-clock"></i><br>Clock in | Clock out</a>
+            <a class="py-2 d-none d-md-inline-block text-center text-light" href="./points.html"><i class="fas fa-chart-bar"></i><br>Points</a>
+            <a class="py-2 d-none d-md-inline-block text-center text-light" href="./daily-report.html"><i class="fas fa-list-alt"></i><br>Daily report</a>
+            <a class="py-2 d-none d-md-inline-block text-center text-light" href="./settings.html"><i class="fas fa-sliders-h"></i><br>Settings</a>
+            <a class="py-2 d-none d-md-inline-block text-center text-light" href="./login.html"><i class="fas fa-sign-out-alt    "></i><br>Log out</a>
         </div>
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 pt-3">
                 <!--Identificacion usuario-->
-                <div class="card text-white bg-dark mb-3">
-                    <div class="row">
-                        <div class="col-5">
-                            <img src="./assets/img/michel-doe.jpeg" alt="michel" class="rounded-circle img-fluids" width="80%">
-                        </div>
-                        <div class="col-7">
-                            <h5 class="card-title">Michel Choi</h5>
-                            <h5 class="card-text"><i class="fas fa-eye">Admin view</i></h5>
-                        </div>
+                <div class="card text-white bg-dark mb-5" style="width: 18rem;" >
+                    <img src="./assets/img/michel-doe.jpeg" class="card-img-top" alt="michel-doe">
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Michel Choi</h5>
+                      <a href="admin_view"><i class="fa fa-eye" aria-hidden="true"></i> Admin view</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-white bg-dark"></li>
+                        <li class="list-group-item text-white bg-dark">09:15 am | 15 may 2018</li>
+                        <li class="list-group-item text-white bg-dark"><button type="button" class="btn btn-primary btn-lg btn-block">Clock in</button>
+                            <a href="http://"><i class="fa fa-info-circle" aria-hidden="true"></i> Forgot to clock yesterday?</a></li>
+                        <li class="list-group-item text-white bg-dark">                   
+                            <p>Mi Points</p>
+                            <h2 class="text-center">95</h2>
+                        </li>
+                        <li class="list-group-item text-white bg-dark">                   
+                            <p>Vilage Points</p>
+                            <h2 class="text-center">95</h2>
+                        </li>
+                    </ul>
+                    <div class="card-body text-white bg-dark">
+                        <blockquote class="blockquote">
+                            <p class="mb-1"><i class="fa fa-quote-left" aria-hidden="true"></i> Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort.<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+                            <footer class="blockquote-footer">Franklin D. Roosevelt <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
                     </div>
                 </div>
-                <!--Boton checkin-->
-                <p class="text-right">09:15 am | 15 may 2018</p>
-                <button type="submit" class="btn btn-primary btn-lg mt-3"><a href="./clockin-clockout.html"><i class="fas fa-sign-in-alt"></i> Entrar</a></button>
-
             </div>
 
 
             <!--SECCION TABLA-->
-            <div class="col-8">
-                  <table class="table table-striped table-inverse table-responsive">
+            <div class="col-8 mt-3">
+                <h2>Clock Records</h2>
+                <form class="pt-3">
+                    <div class="row">
+                        <div class="col">                        
+                            <select class="custom-select">
+                                <option selected>This week</option>
+                                <option value="1">Last week</option>
+                                <option value="2">This month</option>
+                                <option value="3">Last month</option>
+                                <option value="3">Custom date range</option>
+                            </select>
+                        </div>
+                        <div class="col">                        
+                            <select class="custom-select">
+                                <option selected>Michel Choi</option>
+                                <option value="1">Matias Bensan</option>
+                                <option value="2">Claudia Quispe</option>
+                                <option value="3">Gabriela Barrientos</option>
+                                <option value="3">Juanito Pérez</option>
+                            </select>
+                        </div>
+                    </div>
+                  </form>
+                  <table class="table table-striped table-inverse table-responsive table-dark pt-5">
                       <thead class="thead-inverse">
-                          <tr>
-                              <th>lorem</th>
-                              <th>1</th>
-                              <th>2</th>
+                          <tr class="text-center">
+                              <th>Date</th>
+                              <th>Clock in</th>
+                              <th>Clock out</th>
+                              <th>Time spent</th>
+                              <th>Points Earned</th>
+                              <th>Task Description</th>
                           </tr>
                           </thead>
                           <tbody>
                               <tr>
-                                  <td scope="row">bla1</td>
-                                  <td>...</td>
-                                  <td>..</td>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
                               </tr>
                               <tr>
-                                  <td scope="row">bla2</td>
-                                  <td>.</td>
-                                  <td>...</td>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
+                              </tr>
+                              <tr>
+                                  <td scope="row">Jan 1 2018</td>
+                                  <td>08.00 am</td>
+                                  <td>10.00 am</td>
+                                  <td>2 hours</td>
+                                  <td>3.5</td>
+                                  <td>Worked on cloudboard wirefrema</td>
                               </tr>
                           </tbody>
                   </table>
