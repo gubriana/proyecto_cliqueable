@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--NAV-->
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#"><i class="fas fa-flask"></i></a>
+            <a class="py-2 d-none d-md-inline-block active" href="#"><i class="fas fa-clock"></i> Clock in | Clock out</a>
+            <a class="py-2 d-none d-md-inline-block" href="./points.html"><i class="fas fa-chart-bar"></i> Points</a>
+            <a class="py-2 d-none d-md-inline-block" href="./daily-report.html"><i class="fas fa-list-alt"></i> Daily report</a>
+            <a class="py-2 d-none d-md-inline-block" href="./settings.html"><i class="fas fa-sliders-h"></i> Settings</a>
+            <a class="py-2 d-none d-md-inline-block" href="./login.html"><i class="fas fa-sign-out-alt    "></i>Log out</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+
+                <!--Identificacion usuario-->
+                <div class="card text-white bg-dark mb-3">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="./assets/img/michel-doe.jpeg" alt="michel" class="rounded-circle img-fluids" width="80%">
+                        </div>
+                        <div class="col-7">
+                            <h5 class="card-title">Michel Choi</h5>
+                            <h5 class="card-text"><i class="fas fa-eye">Admin view</i></h5>
+                        </div>
+                    </div>
+                </div>
+                <!--Boton checkin-->
+                <p class="text-right">09:15 am | 15 may 2018</p>
+                <button type="submit" class="btn btn-primary btn-lg mt-3"><a href="./clockin-clockout.html"><i class="fas fa-sign-in-alt"></i> Entrar</a></button>
+            </div>
+            <!--SECCION TABLA-->
+            
+            <div class="col-8">
+            <h3>Points</h3>
+            <select name="leng">
+                <option value="Esta Semana">Esta semana</option>
+                <option value="Este mes">Este mes</option>
+                <option value="Este año">Este año</option>
+            </select>
+               
+                    <table class="table table-bordered">
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>Date</th>
+                                <th>Hours Spent</th>
+                                <th>Point Hearned</th>
+                                <th>Awarded by</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                            <tr>
+                                <td scope="row">Enero 01 2018</td>
+                                <td>5</td>
+                                <td>8.5</td>
+                                <td>System</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Enero 01 2018</td>
+                                <td>5</td>
+                                <td>8.5</td>
+                                <td>Admin Michael</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Enero 01 2018</td>
+                                <td>5</td>
+                                <td>8.5</td>
+                                <td>System</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Enero 01 2018</td>
+                                <td>5</td>
+                                <td>8.5</td>
+                                <td>Admin Jhon</td>
+                            </tr>
+                                <tr>
+                                    <td scope="row">Enero 01 2018</td>
+                                    <td>5</td>
+                                    <td>8.5</td>
+                                    <td>System</td>
+                                </tr>
+                            </tbody>
+                    </table>  
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
