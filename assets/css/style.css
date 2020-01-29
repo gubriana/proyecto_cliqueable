@@ -4,6 +4,7 @@
 
 h1, h2, h3, h4, h5, p, form {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: white;
 }
 #login {
     position: absolute;
@@ -39,3 +40,14 @@ h1, h2, h3, h4, h5, p, form {
     outline: none;
     box-shadow: none !important;
 } /* CLICK Matias Bensan */
+
+.text-primary {
+    color: #ff9900;
+}
+nav .active a{
+    color: #ff9900;
+} /*no me funciona */
+
+.bg-black {
+    background-color: black;
+}
