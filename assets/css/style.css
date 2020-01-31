@@ -2,9 +2,9 @@
     background-image: url(../img/background-login.jpeg);
 }
 
-h1, h2, h3, h4, h5, p, form {
+h1, h2, h3, h4, h5, p, form, a {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: white;
+    color: #fff;
 }
 #login {
     position: absolute;
@@ -42,12 +42,30 @@ h1, h2, h3, h4, h5, p, form {
 } /* CLICK Matias Bensan */
 
 .text-primary {
-    color: #ff9900;
+    color: #ff9900;;
 }
-nav .active a{
+.active {
     color: #ff9900;
+    font-weight: bolder;
 } /*no me funciona */
 
 .bg-black {
-    background-color: black;
+    background-color: #262c33;
+}
+
+.card-a {
+    color: #ff9900
+;
+font-weight: lighter;
+}
+
+.card-a:hover {
+    color: #BB7700 ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+    font-weight: 900;
+    text-decoration: none;
 }
